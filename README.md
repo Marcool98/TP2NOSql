@@ -92,13 +92,6 @@ Pour afficher les différents grades attribués, la commande est :
 db.films.distinct("grades")
 ```
 
-## 14. Afficher tous les films dans lesquels jouent au moins un des artistes suivants ["artist:4", "artist:18", "artist:11"]
-Pour afficher tous les films avec les artistes spécifiés, la commande est :
-
-```javascript
-db.films.find({ "artistes": { $in: ["artist:4", "artist:18", "artist:11"] } })
-```
-
 ## 15. Afficher tous les films qui n’ont pas de résumé
 Pour afficher tous les films sans résumé, la commande est :
 
